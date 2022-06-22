@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+MY PORTFOLIO
+
+I built a full portfolio using React & TailwindCSS
+I used Firebase for cloud firestore and auth also some extra dependencies for a better user experience like Framer motion and ant design
+>>>>>>> 1fd0d86e2144249e5db5203d942cf4a0a84774a6

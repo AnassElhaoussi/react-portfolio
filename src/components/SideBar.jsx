@@ -7,11 +7,12 @@ import { motion } from 'framer-motion'
 const SideBar = () => {
 
   return (
-    <div className='fixed h-screen flex flex-col gap-20 bg-blue-500 p-3'>
-        <motion.h1 animate={{x: 0}} initial={{x: 10}} transition={{duration: 0.5}}  className='font-bold text-white text-2xl'>Hey, <span>👋</span></motion.h1>
+    <div className='fixed h-screen flex flex-col gap-20 bg-blue-500 p-4'>
+        <motion.h1 animate={{x: 0}} initial={{x: 10}} transition={{duration: 0.5}}  className='font-bold text-white text-2xl'>Hey,  
+        <span>  👋</span></motion.h1>
         <motion.div 
         animate={{y: 0}} 
-        initial={{y: 10}} 
+        initial={{y: 20}} 
         transition={{duration: 0.5}} 
         className='flex flex-col items-center gap-10 text-3xl text-white cursor-pointer'>
 
