@@ -7,15 +7,17 @@ import { SideBar, Hero, About, Journey, Projects, Footer, Login, SignUp, Contact
 const App = () => {
 
   return (
-    <div className="h-screen font-body ">
-      <div className="flex gap-72 bg-gray-100 min-h-full">
-          <div className="relative">
-            <SideBar />
-          </div>
-          <div className="p-4">
-            <Hero />
-          </div>
+    <div className="flex font-body bg-gray-200">
+
+      <SideBar />
+      <div className="flex flex-col items-center justify-center">
+
+        <Hero />
+        
+
       </div>
+
+      
     </div>
   );
 
