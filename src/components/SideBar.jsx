@@ -8,25 +8,19 @@ import image1 from '../images/mypicture.jpg'
 const SideBar = () => {
 
   return (
-    <div className='fixed'>
-        <div className='flex flex-col gap-20 bg-blue-500 p-4 w-20 h-screen'>
+    <motion.div
+    animate={{y: 0}}
+    initial={{y: 20}}
+    transition={{duration: 0.5, delay: 0.3}}
 
-          <img src={image1} className='rounded-full' alt="" />
-          <motion.div 
-          animate={{y: 0}} 
-          initial={{y: 20}} 
-          transition={{duration: 0.5}} 
-          className='flex flex-col items-center gap-10 text-3xl text-white cursor-pointer'>
+    className='fixed bottom-0 top-0 flex flex-col p-4 gap-16 justify-center text-white text-2xl bg-blue-500 h-screen'>
+      <a href="#"><HomeOutlined /></a>
+      <a href="#about"><UserOutlined /></a>
+      <a href="#journey"><CodeOutlined /></a>
+      <a href="#projects"><ProjectOutlined /></a>
+      <a href="#contact"><MessageOutlined /></a>
 
-            <a href="#"><HomeOutlined/></a>
-            <a href="#about"><UserOutlined /> </a>
-            <a href="#journey"><CodeOutlined /></a>
-            <a href="#projects"><ProjectOutlined /></a>
-            <a href="#contact"><MessageOutlined /></a>
-
-          </motion.div>
-      </div>
-    </div>
+    </motion.div>
   )
 }
 
