@@ -12,9 +12,9 @@ const App = () => {
   return (
 
     <ViewContextProvider>    
-      <div className="flex font-body pb-8">
+      <div className="flex font-body pb-8 bg-gray-100">
         <SideBar />
-        <div className="flex flex-col gap-20 z-50 sm:ml-48 ml-32">
+        <div className="flex flex-col gap-20 z-50 sm:ml-48 ml-32 mr-10">
           <Hero />
           <About />
         </div>
