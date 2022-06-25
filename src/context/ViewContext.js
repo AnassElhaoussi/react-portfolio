@@ -15,13 +15,14 @@ export const ViewContextProvider = ({children}) => {
     useEffect(() => {
         if(!inView){
             animation.start({
-                y: 20
+                y: 30
             })
         } else {
             animation.start({
                 y: 0,
                 transition: {
-                    duration: 0.5
+                    duration: 0.9,
+                    delay: 0.3
                 }
             })
         }
