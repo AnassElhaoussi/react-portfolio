@@ -33,7 +33,7 @@ const Journey = () => {
       <h1 className='text-center font-bold text-5xl'>Web Dev Journey</h1>
       <p className='text-xl font-bold text-gray-500'>Like most people, I started with the basics and that was a bit boring for me, but things started to get more interesting as I got into real projects, from easy to some more advanced concepts.</p>
       <h1 className='text-5xl font-bold text-white bg-blue-500 w-fit'>My Tech Stack</h1>
-      <div className='flex items-center justify-center gap-10 flex-wrap' ref={ref}>
+      <motion.div className='flex items-center justify-center gap-10 flex-wrap' ref={ref} animate={{x: [0, 80, -80, 0]}} transition={{duration: 30, repeat: Infinity}}>
         <img src={htmlIcon} alt="" />
         <img src={cssIcon} alt="" />
         <img src={javascriptIcon} alt="" />
@@ -45,7 +45,7 @@ const Journey = () => {
         <img src={githubIcon} alt="" />
         <img src={firebaseIcon} alt="" />
         <img src={apiIcon} alt="" />
-      </div>
+      </motion.div>
       
     </motion.div>
   )

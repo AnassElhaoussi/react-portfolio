@@ -9,7 +9,7 @@ const SideBar = () => {
 
   return (
     <div
-    className='fixed bottom-0 top-0 flex p-4 text-white text-2xl bg-blue-500 h-screen'>
+    className='z-999 fixed bottom-0 top-0 flex p-4 text-white text-2xl bg-blue-500 h-screen'>
       <motion.div className='flex flex-col justify-center gap-16 ' 
       animate={{y: 0}} 
       initial={{y: 20}} 
