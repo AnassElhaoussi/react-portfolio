@@ -10,5 +10,8 @@ import reactIcon from './icons8-react-native-48.png'
 import githubIcon from './icons8-github-48.png'
 import firebaseIcon from './icons8-firebase-48.png'
 import apiIcon from './icons8-api-48.png'
+import netlifyIcon from './icons8-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites.-24.png'
+import vscodeIcon from './icons8-visual-studio-code-2019-48.png'
 
-export { htmlIcon, cssIcon, javascriptIcon, sassIcon, tailwindIcon, framerMotionIcon, figmaIcon, reactIcon, githubIcon, firebaseIcon, apiIcon }
+
+export { htmlIcon, cssIcon, javascriptIcon, sassIcon, tailwindIcon, framerMotionIcon, figmaIcon, reactIcon, githubIcon, firebaseIcon, apiIcon, netlifyIcon, vscodeIcon }
