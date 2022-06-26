@@ -15,6 +15,7 @@ const App = () => {
           <Hero />
           <About />
           <Journey />
+          <Projects />
         </div>
       </div>
     
