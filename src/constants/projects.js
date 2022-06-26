@@ -5,52 +5,70 @@ export const projects = [
     {
         type: 'HTML, CSS & VanillaJS',
         imageUrl: bookmarkProject,
-        projectName: 'Bookmark Landing Page'
+        projectName: 'Bookmark Landing Page',
+        Likes: 0
+
     },
     {
         type: 'APIs',
         imageUrl: countriesProject,
-        projectName: 'Full countries App'
+        projectName: 'Full countries App',
+        Likes: 0
+
     },
     {
         type: 'HTML, CSS & VanillaJS',
         imageUrl: easybankProject,
-        projectName: 'EasyBank Landing Page'
+        projectName: 'EasyBank Landing Page',
+        Likes: 0
     },
     {
         type: 'HTML, CSS & VanillaJS',
         imageUrl: manageProject,
-        projectName: 'Manage Landing Page'
+        projectName: 'Manage Landing Page',
+        Likes: 0
     },
     {
         type: 'HTML, CSS & VanillaJS',
         imageUrl: nftProject,
-        projectName: 'NFT preview Card Component'
+        projectName: 'NFT preview Card Component',
+        Likes: 0
+
     },
     {
         type: 'HTML, CSS & VanillaJS',
         imageUrl: ps5Project,
-        projectName: 'PS5 Full Project'
+        projectName: 'PS5 Full Project',
+        Likes: 0
+
     },
     {
         type: 'HTML, CSS & VanillaJS',
         imageUrl: teamProject,
-        projectName: '3 cards Project'
+        projectName: '3 cards Project',
+        Likes: 0
+
     },
     {
         type: 'APIs',
         imageUrl: weatherProject,
-        projectName: 'Weather App'
+        projectName: 'Weather App',
+        Likes: 0
+
     },
     {
         type: 'APIs',
         imageUrl: moviesProject,
-        projectName: 'Movies App'
+        projectName: 'Movies App',
+        Likes: 0
+
     },
     {
         type: 'APIs',
         imageUrl: recipeProject,
-        projectName: 'Recipe App'
+        projectName: 'Recipe App',
+        Likes: 0
+
     }
     
 ]
