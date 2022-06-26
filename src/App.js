@@ -4,6 +4,7 @@ import './index.css'
 import { SideBar, Hero, About, Journey, Projects, Footer, Login, SignUp, Contact } from "./components"
 
 
+
 const App = () => {
 
 

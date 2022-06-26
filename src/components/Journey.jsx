@@ -16,10 +16,7 @@ const Journey = () => {
   const stackAnimation = useAnimation()
 
 
-  const data = {
-
-  }
-
+  
 
   useEffect(() => {
     const {innerWidth: width} = window
@@ -32,7 +29,7 @@ const Journey = () => {
 
         if(width >= 650){
           stackAnimation.start({
-            x: [0, 55, -55, 0],
+            x: [0, 40 , -40, 0],
 
             transition: { duration: 30, repeat: Infinity }
           })  
@@ -55,9 +52,9 @@ const Journey = () => {
   return (
     <motion.div animate={animation}  id='journey' className='flex flex-col gap-10'>
       <h1 className='text-center font-bold text-5xl'>Web Dev Journey</h1>
-      <p className='text-xl font-bold text-gray-500' ref={ref}>Like most people, I started with the basics and that was a bit boring for me, but things started to get more interesting as I got into real projects, from easy to some more advanced concepts.</p>
+      <p className='text-xl font-bold text-gray-500'>Like most people, I started with the basics and that was a bit boring for me, but things started to get more interesting as I got into real projects, from easy to some more advanced concepts.</p>
       <h1 className='text-5xl font-bold text-white bg-blue-500 w-fit'>My Tech Stack</h1>
-      <motion.div className='flex items-center justify-center gap-10 flex-wrap' animate={stackAnimation}>
+      <motion.div className='flex items-center justify-center gap-10 flex-wrap' animate={stackAnimation} ref={ref}>
         <img src={htmlIcon} alt="" />
         <img src={cssIcon} alt="" />
         <img src={javascriptIcon} alt="" />
