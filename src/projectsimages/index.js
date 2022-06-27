@@ -9,5 +9,12 @@ import teamProject from './team_project.PNG'
 import weatherProject from './weatherapp.PNG'
 import moviesProject from './moviesApp.PNG'
 import recipeProject from './recipeapp.PNG'
+import googleCloneProject from './googleclone.PNG'
+import loginFormProject from './loginform.PNG'
+import chatAppProject from './chatapp.PNG'
+import reactmoviesProject from './reactmoviesapp.PNG'
+import todoListProject from './todolist.PNG'
 
-export {bookmarkProject, countriesProject, easybankProject, manageProject, nftProject, ps5Project, teamProject, weatherProject, moviesProject, recipeProject}
+
+
+export {bookmarkProject, countriesProject, easybankProject, manageProject, nftProject, ps5Project, teamProject, weatherProject, moviesProject, recipeProject, googleCloneProject, loginFormProject, chatAppProject, reactmoviesProject, todoListProject}
