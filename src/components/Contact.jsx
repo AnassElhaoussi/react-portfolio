@@ -1,6 +1,9 @@
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { db } from '../firebase'
+import { useInView } from 'react-intersection-observer'
+import { useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const Contact = () => {
 
@@ -8,6 +11,24 @@ const Contact = () => {
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
   const [notValid, setNotValid] = useState(false)
+  const {ref, inView} = useInView()
+  const animation = useAnimation()
+
+  useEffect(() => {
+    if(inView){
+      animation.start({
+        x: 0,
+        transition: {
+          duration: 0.5,
+        }
+
+      })
+    } else {
+      animation.start({
+        x: -600
+      })
+    }
+  }, [inView])
 
   const submitMessage = async (e) => {
     e.preventDefault()
@@ -28,20 +49,16 @@ const Contact = () => {
       setNotValid(true)
     }
 
-   
-
-
-
     
   }
 
   return (
     <div className='flex flex-col gap-20'>
       <h1 className='text-5xl font-bold text-center'>Contact me</h1>
-      <div className='flex  justify-center'>
+      <motion.div animate={animation} className='flex  justify-center' id='contact'>
         <form action="" className='flex flex-col gap-8' onSubmit={(e) => submitMessage(e)}>
           <form action="" className='flex flex-col gap-2 items-start'>
-            <label htmlFor="" className='text-blue-500'>Your name :</label>
+            <label htmlFor="" className='text-blue-500' ref={ref}>Your name :</label>
             <input type="text" 
             className={!notValid ? 'px-8 py-2 outline-none rounded-sm' : 'px-8 py-2 outline-none rounded-sm placeholder:text-red-600'}
             placeholder={!notValid ? "Ex: Christiana V. Clarc" : "Please enter your name!"}
@@ -67,7 +84,7 @@ const Contact = () => {
           <button type='submit' className='bg-blue-500 text-white font-bold px-8 rounded py-1'>Send</button>
         </form>
         
-      </div>
+      </motion.div>
       
     </div>
   )

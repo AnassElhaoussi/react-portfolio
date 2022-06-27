@@ -12,7 +12,7 @@ const App = () => {
 
       <div className="flex font-body pb-8 bg-gray-100 overflow-hidden">
         <SideBar />
-        <div className="flex flex-col gap-40 sm:pl-48 pl-32 pr-10">
+        <div className="flex flex-col gap-40 md:pl-48 pl-24 pr-10">
           <Hero />
           <About />
           <Journey />
