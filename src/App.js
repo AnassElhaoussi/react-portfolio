@@ -9,8 +9,9 @@ const App = () => {
 
 
   return (
+    <div className="font-body">
 
-      <div className="flex font-body pb-8 bg-gray-100 overflow-hidden">
+      <div className="flex pb-8 overflow-hidden">
         <SideBar />
         <div className="flex flex-col gap-40 md:pl-48 pl-24 pr-10">
           <Hero />
@@ -18,8 +19,12 @@ const App = () => {
           <Journey />
           <Projects />
           <Contact />
+          
         </div>
+        
       </div>
+      <Footer />
+    </div>
     
   );
 

@@ -53,7 +53,7 @@ const Journey = () => {
     <motion.div animate={animation}  id='journey' className='flex flex-col gap-10'>
       <h1 className='text-center font-bold text-5xl'>Web Dev Journey</h1>
       <p className='text-xl font-bold text-gray-500'>Like most people, I started with the basics and that was a bit boring for me, but things started to get more interesting as I got into real projects, from easy to some more advanced concepts.</p>
-      <h1 className='text-5xl font-bold text-white bg-blue-500 w-fit'>My Tech Stack</h1>
+      <h1 className='text-5xl font-bold text-blue-500 w-fit'>My Tech Stack</h1>
       <motion.div className='flex items-center justify-center gap-10 flex-wrap' animate={stackAnimation} ref={ref}>
         <img src={htmlIcon} alt="" />
         <img src={cssIcon} alt="" />
